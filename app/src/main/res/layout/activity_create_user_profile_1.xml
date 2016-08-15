@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Views.CreateUserProfileActivity_One">
+
+    <!-- Toolbar Object -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/Toolbar_Main"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/BIG_White"
+        android:elevation="4dp"
+        android:theme="@style/AppBarTheme"
+        >
+
+        <!-- Create Profile Text -->
+
+        <TextView
+            android:layout_height="40dp"
+            android:layout_width="250dp"
+            android:layout_gravity="left"
+            android:text="Create Profile"
+            android:textColor="@color/BIG_Orange"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            />
+
+        <!-- Logo Image -->
+
+        <ImageView
+            android:layout_height="match_parent"
+            android:layout_width="75dp"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_icon_biglogo"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <!-- First Name Field -->
+    <EditText
+        android:id="@+id/EdtTxt_FirstName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/Hint_FirstName"
+        android:background="@drawable/border_blue_round"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="italic"
+        android:maxLines="1"/>
+
+    <!-- Last Name Field -->
+    <EditText
+        android:id="@+id/EdtTxt_LastName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/Hint_LastName"
+        android:background="@drawable/border_blue_round"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="3dp"
+        android:textStyle="italic"
+        android:maxLines="1"/>
+
+    <!-- Company Name Field -->
+    <EditText
+        android:id="@+id/EdtTxt_CompanyName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/Hint_CompanyName"
+        android:background="@drawable/border_blue_round"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="3dp"
+        android:textStyle="italic"
+        android:maxLines="1"/>
+
+    <!-- Zip Code Field -->
+    <EditText
+        android:id="@+id/EdtTxt_ZipCode"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/Hint_ZipCode"
+        android:maxLength="5"
+        android:background="@drawable/border_blue_round"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="3dp"
+        android:textStyle="italic"
+        android:inputType="number"
+        android:maxLines="1"/>
+
+    <!-- Phone Number Field -->
+    <EditText
+        android:id="@+id/EdtTxt_Phone"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/Hint_Phone"
+        android:background="@drawable/border_blue_round"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="3dp"
+        android:textStyle="italic"
+        android:inputType="phone"
+        android:maxLines="1"/>
+
+    <!--  Email Field -->
+    <EditText
+        android:id="@+id/EdtTxt_Email"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/Hint_Email"
+        android:background="@drawable/border_blue_round"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="3dp"
+        android:textStyle="italic"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"/>
+
+    <!-- Navigation -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/ImgView_NavToLoginScreen"
+            android:layout_height="match_parent"
+            android:layout_width="75dp"
+            android:src="@drawable/nav_arrow_left"
+            android:clickable="true"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </Space>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_icon_greenlight"
+            android:clickable="false"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </Space>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_circle_gray"
+            android:clickable="false"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </Space>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_circle_gray"
+            android:clickable="false"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </Space>
+
+        <ImageView
+            android:id="@+id/ImgView_NavToCreateProfileStepTwo"
+            android:layout_height="match_parent"
+            android:layout_width="75dp"
+            android:src="@drawable/nav_arrow_right_inactive"
+            android:clickable="false"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

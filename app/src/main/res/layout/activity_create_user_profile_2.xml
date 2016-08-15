@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Views.CreateUserProfileActivity_Two">
+
+    <!-- Toolbar -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/Toolbar_Main"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/BIG_White"
+        android:elevation="4dp"
+        android:theme="@style/AppBarTheme"
+        >
+
+        <!-- Create Profile Text -->
+
+        <TextView
+            android:layout_height="40dp"
+            android:layout_width="250dp"
+            android:layout_gravity="left"
+            android:text="Create Profile"
+            android:textColor="@color/BIG_Orange"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            />
+
+        <!-- Logo Image -->
+
+        <ImageView
+            android:layout_height="match_parent"
+            android:layout_width="75dp"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_icon_biglogo"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <!-- Work Specialties Button -->
+    <Button
+        android:id="@+id/Btn_WorkSpecialties"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_blue"
+        android:hint="@string/Hint_WorkSpecialties"
+        android:textStyle="bold"
+        android:textColorHint="@color/BIG_White"
+        android:textSize="24dp"
+        android:textAlignment="viewStart"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="20dp"
+        >
+
+    </Button>
+
+    <!-- Profile Photo Button -->
+    <!-- TO DO: Add photo to button without the image iimproperly scaling -->
+    <Button
+        android:id="@+id/Btn_ProfilePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_blue"
+        android:hint="@string/Hint_ProfilePhoto"
+        android:textStyle="bold"
+        android:textColorHint="@color/BIG_White"
+        android:textSize="24dp"
+        android:textAlignment="viewStart"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <!-- Licenses Button -->
+    <Button
+        android:id="@+id/Btn_Licenses"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_blue"
+        android:hint="@string/Hint_Licenses"
+        android:textStyle="bold"
+        android:textColorHint="@color/BIG_White"
+        android:textSize="24dp"
+        android:textAlignment="viewStart"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <!-- Insurance Button -->
+    <Button
+        android:id="@+id/Btn_Insurance"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_blue"
+        android:hint="@string/Hint_Insurance"
+        android:textStyle="bold"
+        android:textColorHint="@color/BIG_White"
+        android:textSize="24dp"
+        android:textAlignment="viewStart"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <!-- Website Field -->
+    <EditText
+        android:id="@+id/EdtTxt_Website"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/Hint_Website"
+        android:background="@drawable/border_blue_round"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="3dp"
+        android:textStyle="italic"/>
+
+    <!-- Navigation -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="66dp"
+        android:layout_gravity="bottom">
+
+        <ImageView
+            android:layout_height="match_parent"
+            android:layout_width="75dp"
+            android:src="@drawable/nav_arrow_left"
+            android:clickable="true"
+            android:onClick="ImgView_NavToCreateProfileStepOne_Click"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </Space>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_icon_greenlight" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </Space>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_icon_greenlight"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </Space>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_circle_gray"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </Space>
+
+        <ImageView
+            android:layout_height="match_parent"
+            android:layout_width="75dp"
+            android:src="@drawable/nav_arrow_right_inactive"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

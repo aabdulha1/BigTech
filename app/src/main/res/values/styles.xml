@@ -1,0 +1,42 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- <item name="colorPrimary">@color/colorPrimary</item> -->
+        <item name="colorPrimaryDark">@color/BIG_Blue</item>
+        <!-- <item name="colorAccent">@color/colorAccent</item> -->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    //nav material
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base"/>
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar"/>
+
+
+    <!-- To Integrate -->
+    <style name="AppBarTheme" parent ="ThemeOverlay.AppCompat.ActionBar">
+
+        <item name="android:color">@color/BIG_White</item>
+
+    </style>
+
+    <style name="AppButtonTheme" parent="Base.Widget.AppCompat.Button">
+
+        <item name="colorButtonNormal">@color/BIG_White</item>
+
+    </style>
+
+    <style name="AppCheckTheme" parent="Theme.AppCompat.Light">
+
+        <item name="colorPrimary">@color/BIG_White</item>
+        <item name="colorPrimaryDark">@color/BIG_White</item>
+
+    </style>
+    <!-- To Integrate -->
+
+
+</resources>

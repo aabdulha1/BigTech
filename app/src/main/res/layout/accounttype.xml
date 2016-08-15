@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/bg_blueprint"
+              android:fitsSystemWindows="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/logo_w_h"
+            android:layout_height="@dimen/logo_w_h"
+            android:src="@mipmap/ic_big"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/imageView"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Allow you to find jobs and connect to others."
+            android:id="@+id/textView4"
+            android:textColor="#4068c7"
+            android:layout_alignBottom="@+id/btn_individual"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:elevation="5sp"/>
+        <Button
+            android:id="@+id/btn_individual"
+            android:layout_width="300sp"
+            android:layout_height="60sp"
+            android:text="Individual"
+            android:textColor="#f09627"
+            android:background="@drawable/rounded_edittext"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:capitalize="none"
+            android:gravity="center|top"
+            android:contextClickable="true"
+            android:layout_marginTop="41dp"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Allows your company to post jobs, find people, find jobs and connect to others."
+            android:id="@+id/textView5"
+            android:textColor="#4068c7"
+            android:layout_alignBottom="@+id/btn_crew"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:elevation="5sp"/>
+
+        <Button
+            android:id="@+id/btn_crew"
+            android:layout_width="300sp"
+            android:layout_height="70sp"
+            android:text="Crew / Company"
+            android:textColor="#f09627"
+            android:background="@drawable/rounded_edittext"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:capitalize="none"
+            android:gravity="center|top"
+            android:layout_below="@+id/textView4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Choose an account type to create your profile. If you already have an account please Login."
+            android:id="@+id/textView"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:textColor="#4068c7"
+            android:textStyle="bold"
+            android:layout_below="@+id/imageView"
+            android:layout_alignParentStart="true"/>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="#4068c7"
+            android:background="@drawable/rounded_edittext"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:capitalize="none"
+            android:layout_below="@+id/textView5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20sp"/>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
